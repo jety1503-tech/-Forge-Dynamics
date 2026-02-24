@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Employability Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚀 AI-Driven Educational Platform</h1>
+        <p>Bridge the Employability Gap Using Artificial Intelligence</p>
+        <button id="theme-toggle" onclick="toggleTheme()">Switch to Dark Mode</button>
+    </header>
+
+    <nav>
+        <button onclick="showPage('home')">🏠 Home</button>
+        <button onclick="showPage('login')">🔑 Login</button>
+        <button onclick="showPage('dashboard')">📊 Dashboard</button>
+        <button onclick="showPage('profile')">👤 Profile</button>
+        <button onclick="showPage('analysis')">📈 Skill Analysis</button>
+        <button onclick="showPage('courses')">📚 Courses</button>
+        <button onclick="showPage('jobs')">💼 Jobs</button>
+    </nav>
+
+    <div class="container">
+        <!-- HOME PAGE -->
+        <div id="home">
+            <div class="card">
+                <h2>Welcome to Our Platform</h2>
+                <p>This cutting-edge platform uses Artificial Intelligence to analyze your skills, identify gaps, and recommend personalized learning paths and job opportunities.</p>
+            </div>
+
+            <div class="card">
+                <h3>✨ Key Features</h3>
+                <ul>
+                    <li>🤖 <strong>AI Skill Gap Analysis</strong> - Intelligent assessment of your skills</li>
+                    <li>📊 <strong>Employability Score</strong> - Real-time scoring based on market demand</li>
+                    <li>📚 <strong>Course Recommendations</strong> - Personalized learning suggestions</li>
+                    <li>💼 <strong>Job Matching</strong> - Find roles that match your profile</li>
+                    <li>📈 <strong>Profile Tracking</strong> - Monitor your progress over time</li>
+                    <li>🎯 <strong>Drag & Drop Skills</strong> - Easy skill management system</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>🎓 How It Works</h3>
+                <p><strong>Step 1:</strong> Login to your account or create a new one</p>
+                <p><strong>Step 2:</strong> Add your current skills to your profile</p>
+                <p><strong>Step 3:</strong> Get AI-powered analysis of your skill gaps</p>
+                <p><strong>Step 4:</strong> Receive personalized course recommendations</p>
+                <p><strong>Step 5:</strong> Explore job opportunities that match your profile</p>
+            </div>
+        </div>
+
+        <!-- LOGIN PAGE -->
+        <div id="login" class="hidden">
+            <div class="card">
+                <h2>Login to Your Account</h2>
+                <p>Use these test credentials to explore the platform:</p>
+                <p><span style="color: #cc0000; font-weight: bold;">Username:</span> user1 | <span style="color: #cc0000; font-weight: bold;">Password:</span> pass123</p>
+                <p><span style="color: #cc0000; font-weight: bold;">Username:</span> user2 | <span style="color: #cc0000; font-weight: bold;">Password:</span> pass456</p>
+                <hr style="border: none; border-top: 2px solid #e0e0e0; margin: 20px 0;">
+                <input id="username" placeholder="Enter your username">
+                <input id="password" type="password" placeholder="Enter your password">
+                <button class="primary" onclick="login()">🔓 Login</button>
+                <p id="loginStatus"></p>
+            </div>
+        </div>
+
+        <!-- DASHBOARD PAGE -->
+        <div id="dashboard" class="hidden">
+            <!-- Dashboard content will be populated by JavaScript -->
+        </div>
+
+        <!-- PROFILE PAGE -->
+        <div id="profile" class="hidden">
+            <!-- Profile content with drag & drop will be populated by JavaScript -->
+        </div>
+
+        <!-- SKILL ANALYSIS PAGE -->
+        <div id="analysis" class="hidden">
+            <!-- Skill analysis content will be populated by JavaScript -->
+        </div>
+
+        <!-- COURSES PAGE -->
+        <div id="courses" class="hidden">
+            <!-- Courses content will be populated by JavaScript -->
+        </div>
+
+        <!-- JOBS PAGE -->
+        <div id="jobs" class="hidden">
+            <!-- Jobs content will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
